@@ -1,0 +1,58 @@
+{
+  "name": {
+    "en": "Floalt Panel",
+    "nl": "Floalt Paneel",
+    "de": "Floalt-Paneel"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim",
+    "light_temperature"
+  ],
+  "capabilitiesOptions": {
+    "dim": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "onoff": {
+      "setOnDim": false
+    }
+  },
+  "zigbee": {
+    "manufacturerName": "IKEA of Sweden",
+    "productId": [
+      "FLOALT panel WS 30x30",
+      "FLOALT panel WS 30x90",
+      "FLOALT panel WS 90x30",
+      "FLOALT panel WS 60x60"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          4,
+          6,
+          8,
+          768
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/floalt_panel/assets/icon.svg",
+      "instruction": {
+        "en": "Toggle the Floalt Panel once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the Floalt Panel by toggling it 6 times, afterwards leave it turned on. It will flash to indicate it has been reset.",
+        "nl": "Zet het Floalt Paneel één keer uit en weer aan.\n\nWordt het Floalt Paneel niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten, laat de lamp vervolgens aan staan. Het Floalt Paneel zal knipperen om aan te geven dat hij is gereset.",
+        "de": "Schalte das FLOALT-Paneel einmal um, um es zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche das FLOALT-Paneel durch 6-maliges Umschalten zurückzusetzen; schalte es anschließend schnell ein. Es blinkt wenn es zurückgesetzt wurde."
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/floalt_panel/assets/images/large.png",
+    "small": "/drivers/floalt_panel/assets/images/small.png"
+  },
+  "settings": [
+
+  ]
+}

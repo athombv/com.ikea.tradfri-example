@@ -1,0 +1,47 @@
+{
+  "id": "updown_remote_control",
+  "name": {
+    "en": "Up/Down Remote Control",
+    "nl": "Omhoog/Omlaag Afstandsbediening"
+  },
+  "class": "remote",
+  "capabilities": [
+    "alarm_battery"
+  ],
+  "energy": {
+    "batteries": [
+      "CR2032"
+    ]
+  },
+  "zigbee": {
+    "manufacturerName": "KE",
+    "productId": [
+      "TRADFRI open/close remote"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          1,
+          4096
+        ],
+        "bindings": [
+          6,
+          8,
+          258
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/updown_remote_control/assets/learnmode.svg",
+      "instruction": {
+        "en": "Open up the Up/Down Remote Control to access the pair button. Press the pair button 4 times in 5 seconds and wait for the LED to start blinking.",
+        "nl": "Maak de Omhoog/Omlaag Afstandsbediening open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden en wacht tot het lampje gaat knipperen."
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/updown_remote_control/assets/images/large.png",
+    "small": "/drivers/updown_remote_control/assets/images/small.png"
+  }
+}

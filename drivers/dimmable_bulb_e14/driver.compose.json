@@ -1,0 +1,51 @@
+{
+  "name": {
+    "en": "Dimmable Bulb (E14)",
+    "nl": "Dimbare Lamp (E14)",
+    "de": "Dimmbare Birne (E14)"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "capabilitiesOptions": {
+    "dim": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "onoff": {
+      "setOnDim": false
+    }
+  },
+  "zigbee": {
+    "manufacturerName": "IKEA of Sweden",
+    "productId": "TRADFRI bulb E14 W op/ch 400lm",
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/dimmable_bulb_e14/assets/learnmode.svg",
+      "instruction": {
+        "en": "Toggle the bulb once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on. It will flash to indicate it has been reset.",
+        "nl": "Zet de lamp één keer uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten zoals de animatie laat zien, laat de lamp vervolgens aan staan. De lamp zal knipperen om aan te geven dat hij is gereset.",
+        "de": "Schalte die Birne einmal um, um sie zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, die Birne durch 6-maliges Umschalten zurückzusetzen; schalte sie anschließend schnell ein. Sie blinkt wenn sie zurückgesetzt wurde."
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/dimmable_bulb_e14/assets/images/large.jpg",
+    "small": "/drivers/dimmable_bulb_e14/assets/images/small.jpg"
+  },
+  "settings": [
+
+  ]
+}

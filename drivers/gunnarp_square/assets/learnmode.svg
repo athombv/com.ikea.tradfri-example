@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>drivers/gunnarp_square/assets/learnmode</title>
+    <desc>Created with Sketch.</desc>
+  <style type="text/css">
+    #pair {
+    animation-name: toggles;
+    animation-delay: 3s;
+    animation-duration: 14.2s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    }
+
+    @keyframes toggles {
+    1%,	/* low toggle 1 */
+    6%,	/* low toggle 1 */
+    10%,	/* low toggle 2 */
+    15%,	/* low toggle 2 */
+    18%,	/* low toggle 3 */
+    23%,	/* low toggle 3 */
+    27%,	/* low toggle 4 */
+    32%,	/* low toggle 4 */
+    35%,	/* low toggle 5 */
+    40%,	/* low toggle 5 */
+    44%,	/* low toggle 6 */
+    48%	/* low toggle 6 */
+    {
+    opacity: 0;
+    }
+    3%,	/* high toggle 1 */
+    5%,	/* high toggle 1 */
+    11%,	/* high toggle 2 */
+    13%,	/* high toggle 2 */
+    20%,	/* high toggle 3 */
+    22%,	/* high toggle 3 */
+    28%,	/* high toggle 4 */
+    30%,	/* high toggle 4 */
+    36%,	/* high toggle 5 */
+    39%,	/* high toggle 5 */
+    45%,	/* high toggle 6 */
+    47%	/* high toggle 6 */
+    {
+    opacity: 1;
+    }
+    }
+  </style>
+  <g id="drivers/gunnarp_square/assets/learnmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M154.358165,624 L99.9916175,444 L859.991617,444 L805.62507,624 L154.358165,624 Z" id="pair" fill="#FFF67A"></path>
+        <path d="M32,414 L32,384 L928,384 L928,414 L32,414 Z" id="Combined-Shape" stroke="#000000" stroke-width="10"></path>
+        <path d="M47,384 L48.959276,312 L911.040724,312 L913,384 L47,384 Z" id="Combined-Shape" stroke="#000000" stroke-width="10"></path>
+        <path d="M154.366547,624 L100,444 L860,444 L805.633453,624 L154.366547,624 Z" id="Combined-Shape" stroke="#000000" stroke-width="15" stroke-linejoin="round"></path>
+        <path d="M923.079965,374.492625 L938,374.492625 L938,415.387243 L863.738674,655 L96.2613258,655 L22,415.387243 L22,374.492625 L36.9200352,374.492625 L38.8829545,303 L921.117046,303 L923.079965,374.492625 Z" id="Path" stroke="#000000" stroke-width="20" stroke-linejoin="round"></path>
+    </g>
+</svg>

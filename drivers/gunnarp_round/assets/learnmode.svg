@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>drivers/gunnarp_round/assets/learnmode</title>
+    <desc>Created with Sketch.</desc>
+  <style type="text/css">
+    #pair {
+    animation-name: toggles;
+    animation-delay: 3s;
+    animation-duration: 14.2s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    }
+
+    @keyframes toggles {
+    1%,	/* low toggle 1 */
+    6%,	/* low toggle 1 */
+    10%,	/* low toggle 2 */
+    15%,	/* low toggle 2 */
+    18%,	/* low toggle 3 */
+    23%,	/* low toggle 3 */
+    27%,	/* low toggle 4 */
+    32%,	/* low toggle 4 */
+    35%,	/* low toggle 5 */
+    40%,	/* low toggle 5 */
+    44%,	/* low toggle 6 */
+    48%	/* low toggle 6 */
+    {
+    opacity: 0;
+    }
+    3%,	/* high toggle 1 */
+    5%,	/* high toggle 1 */
+    11%,	/* high toggle 2 */
+    13%,	/* high toggle 2 */
+    20%,	/* high toggle 3 */
+    22%,	/* high toggle 3 */
+    28%,	/* high toggle 4 */
+    30%,	/* high toggle 4 */
+    36%,	/* high toggle 5 */
+    39%,	/* high toggle 5 */
+    45%,	/* high toggle 6 */
+    47%	/* high toggle 6 */
+    {
+    opacity: 1;
+    }
+    }
+  </style>
+  <g id="drivers/gunnarp_round/assets/learnmode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ellipse id="pair" fill="#FFF67A" cx="479.991617" cy="539" rx="380" ry="83"></ellipse>
+        <ellipse id="Oval" stroke="#000000" stroke-width="15" cx="480" cy="539" rx="372.5" ry="75.5"></ellipse>
+        <ellipse id="Oval" stroke="#000000" stroke-width="10" cx="480" cy="530" rx="469" ry="118"></ellipse>
+        <path d="M480,318 C720.135917,318 915.259214,372.120256 919.137667,439.295772 L919.196507,441.335347 L919.350422,449.861964 C938.518532,461.267088 949,473.617719 949,486.513889 L949,522 L947.939122,521.999965 C948.642607,524.643746 949,527.311372 949,530 C949,595.1696 739.021548,648 480,648 C220.978452,648 11,595.1696 11,530 C11,527.311372 11.357393,524.643746 12.0608783,521.999965 L11,522 L11,487 L11.0174083,487 L11,486.513889 C11,473.617648 21.4815836,461.266952 40.6498944,449.861776 L40.8034934,441.335347 L40.8623332,439.295772 C44.7407856,372.120256 239.864083,318 480,318 Z" id="Combined-Shape" stroke="#000000" stroke-width="15" stroke-linejoin="round"></path>
+        <path d="M11,522 L11,487 L11.0174083,487 L11,486.513889 C11,429.369676 216.799881,382.936942 472.244227,382.014002 L480,382 C739.021548,382 949,428.792462 949,486.513889 L949,487.000866 L949,487.000866 L949,487 L949,522" id="Path" stroke="#000000" stroke-width="10"></path>
+    </g>
+</svg>

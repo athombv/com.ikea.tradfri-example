@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>drivers/gunnarp_square/assets/icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="drivers/gunnarp_square/assets/icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <path d="M32,414 L32,384 L928,384 L928,414 L32,414 Z" id="Combined-Shape" stroke="#000000" stroke-width="15"></path>
+        <path d="M47,384 L48.959276,312 L911.040724,312 L913,384 L47,384 Z" id="Combined-Shape" stroke="#000000" stroke-width="15"></path>
+        <path d="M154.366547,624 L100,444 L860,444 L805.633453,624 L154.366547,624 Z" id="Combined-Shape" stroke="#000000" stroke-width="15"></path>
+        <path d="M927.944568,369.492625 L943,369.492625 L943,416.144287 L867.423688,660 L92.5763124,660 L17,416.144287 L17,369.492625 L32.0554321,369.492625 L34.0183514,298 L925.981649,298 L927.944568,369.492625 Z" id="Path" stroke="#000000" stroke-width="30"></path>
+    </g>
+</svg>

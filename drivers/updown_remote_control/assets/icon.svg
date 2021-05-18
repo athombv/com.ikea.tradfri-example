@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>dim_remote_control/icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="dim_remote_control/icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#000000" stroke-width="40" x="20" y="20" width="920" height="919" rx="276"></rect>
+        <g id="Group" transform="translate(424.768856, 187.000000)" stroke="#000000" stroke-width="20">
+            <path d="M55.2311442,41 C55.2311442,19.6505082 55.2311442,5.98384154 55.2311442,0" id="Path-14"></path>
+            <path d="M55.2311442,126.413472 C55.2311442,105.06398 55.2311442,91.3973135 55.2311442,85.413472" id="Path-14"></path>
+            <path d="M92.4702365,105.5 C92.4702365,84.1505082 92.4702365,70.4838415 92.4702365,64.5" id="Path-14" transform="translate(92.470237, 85.000000) scale(1, -1) rotate(60.000000) translate(-92.470237, -85.000000) "></path>
+            <path d="M18.5,62.793264 C18.5,41.4437722 18.5,27.7771056 18.5,21.793264" id="Path-14" transform="translate(18.500000, 42.293264) scale(1, -1) rotate(60.000000) translate(-18.500000, -42.293264) "></path>
+            <path d="M92.4702365,62.5 C92.4702365,41.1505082 92.4702365,27.4838415 92.4702365,21.5" id="Path-14" transform="translate(92.470237, 42.000000) rotate(60.000000) translate(-92.470237, -42.000000) "></path>
+            <path d="M18.5,105.206736 C18.5,83.8572442 18.5,70.1905775 18.5,64.206736" id="Path-14" transform="translate(18.500000, 84.706736) rotate(60.000000) translate(-18.500000, -84.706736) "></path>
+        </g>
+        <g id="Group-2" transform="translate(415.000000, 663.000000)" stroke="#000000" stroke-linecap="square" stroke-width="20">
+            <line x1="0" y1="1" x2="131" y2="1" id="Line-2"></line>
+            <line x1="0" y1="55" x2="131" y2="55" id="Line-2"></line>
+            <line x1="0" y1="109" x2="131" y2="109" id="Line-2"></line>
+        </g>
+    </g>
+</svg>

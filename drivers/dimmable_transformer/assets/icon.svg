@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>dimmable_transformer/icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="dimmable_transformer/icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#000000" stroke-width="30" stroke-linejoin="round" x="91" y="392" width="728" height="147"></rect>
+        <rect id="Rectangle" stroke="#000000" stroke-width="20" stroke-linejoin="round" x="823" y="442" width="26" height="46"></rect>
+        <rect id="Rectangle" stroke="#000000" stroke-width="20" stroke-linejoin="round" x="427" y="652" width="72" height="133"></rect>
+        <rect id="Rectangle" fill="#000000" x="473" y="760" width="13" height="25" rx="6.5"></rect>
+        <rect id="Rectangle" fill="#000000" x="473" y="652" width="13" height="25" rx="6.5"></rect>
+        <rect id="Rectangle" stroke="#000000" stroke-width="20" stroke-linejoin="round" x="95" y="421.5" width="26" height="88"></rect>
+        <rect id="Rectangle" fill="#000000" x="235" y="380" width="21" height="48" rx="10.5"></rect>
+        <rect id="Rectangle" fill="#000000" x="382" y="380" width="21" height="48" rx="10.5"></rect>
+        <rect id="Rectangle" fill="#000000" x="472" y="380" width="21" height="48" rx="10.5"></rect>
+        <line x1="464.48519" y1="696.486601" x2="464.48519" y2="741.372355" id="Path-15" stroke="#000000" stroke-width="10" stroke-linecap="round"></line>
+        <line x1="480" y1="696.486601" x2="480" y2="741.372355" id="Path-15" stroke="#000000" stroke-width="10" stroke-linecap="round"></line>
+        <path d="M499,718.929478 L843.469676,718.929478 C898.698151,718.929478 943.469676,674.157953 943.469676,618.929478 L943.469676,559.469676 C943.469676,507.295514 901.174161,465 849,465 L849,465 L849,465" id="Path-17" stroke="#000000" stroke-width="30"></path>
+    </g>
+</svg>

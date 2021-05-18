@@ -1,0 +1,34 @@
+{
+  "id": "com.ikea.tradfri",
+  "name": {
+    "en": "IKEA Trådfri",
+    "de": "IKEA Trådfri"
+  },
+  "description": {
+    "en": "Create the right atmosphere for every mood",
+    "nl": "Creëer de juiste sfeer voor elke stemming"
+  },
+  "category": [
+    "lights"
+  ],
+  "version": "1.8.4",
+  "compatibility": ">=5.0.0",
+  "brandColor": "#0b579e",
+  "sdk": 3,
+  "author": {
+    "name": "Athom B.V.",
+    "email": "info@athom.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Lucas van der Have",
+        "email": "lucasvdhave@gmail.com"
+      }
+    ]
+  },
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  }
+}

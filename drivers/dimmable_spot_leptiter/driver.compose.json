@@ -1,0 +1,52 @@
+{
+  "name": {
+    "en": "Leptiter Recessed Spotlight",
+    "nl": "Leptiter Inbouwspot",
+    "de": "Leptiter Einbauspot"
+  },
+  "class": "light",
+  "capabilities": [
+    "dim",
+    "onoff",
+    "light_temperature"
+  ],
+  "capabilitiesOptions": {
+    "dim": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "onoff": {
+      "setOnDim": false
+    }
+  },
+  "images": {
+    "large": "/drivers/dimmable_spot_leptiter/assets/images/large.png",
+    "small": "/drivers/dimmable_spot_leptiter/assets/images/small.png"
+  },
+  "zigbee": {
+    "manufacturerName": "IKEA of Sweden",
+    "productId": [
+      "LEPTITER Recessed spot light"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          4,
+          6,
+          8,
+          768
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/dimmable_spot_leptiter/assets/learnmode.svg",
+      "instruction": {
+        "en": "Toggle the Leptiter Recessed Spotlight once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the Leptiter Recessed Spotlight by toggling it 6 times, afterwards leave it turned on. It will flash to indicate it has been reset.",
+        "nl": "Zet de Leptiter Inbouwspot één keer uit en weer aan.\n\nWordt de Leptiter Inbouwspot niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten, laat de lamp vervolgens aan staan. De Leptiter Inbouwspot zal knipperen om aan te geven dat hij is gereset.",
+        "de": "Schalte das Leptiter Einbauspot einmal um, um es zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche das Leptiter Einbauspot durch 6-maliges Umschalten zurückzusetzen; schalte es anschließend schnell ein. Es blinkt wenn es zurückgesetzt wurde."
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": {
+    "en": "Control Outlet",
+    "nl": "Draadloos Stopcontact",
+    "de": "Drahtlose Steckdose"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "zigbee": {
+    "manufacturerName": "IKEA of Sweden",
+    "productId": [
+      "TRADFRI control outlet"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/control_outlet/assets/learnmode.svg",
+      "instruction": {
+        "en": "Press and hold the pair button on top of the Control Outlet with a small pin until the LED starts blinking.\n\nNote: it can take 15-20 seconds before pairing starts after releasing the button, if the device does not pair within 15-20 seconds please try again.",
+        "nl": "Houd met een klein pinnetje de knop boven op het Draadloos Stopcontact ingedrukt totdat de LED gaat knipperen.\n\nLet op: het kan 15-20 seconden duren na het loslaten van de knop voor het apparaat wordt gekoppeld, gebeurt dit niet binnen 15-20 seconden probeer het dan nog eens.",
+        "de": "Drücke und halte die Koppeln-Taste oben auf der drahtlosen Steckdose mit einem kleinen Stift, bis die LED blinkt.\n\nHinweis: es kann 15-20 Sekunden dauern, bevor das Koppeln nach dem Loslassen der Taste beginne; wenn das Gerät innerhalb 15-20 Minuten nicht gekoppelt wird, bitte versuche es erneut."
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/control_outlet/assets/images/large.png",
+    "small": "/drivers/control_outlet/assets/images/small.png"
+  }
+}

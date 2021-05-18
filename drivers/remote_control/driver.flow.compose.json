@@ -1,0 +1,67 @@
+{
+  "triggers": [
+    {
+      "id": "toggled",
+      "title": {
+        "en": "On/off button was pressed",
+        "nl": "Aan/uit knop is ingedrukt"
+      }
+    },
+    {
+      "id": "dim_down",
+      "title": {
+        "en": "Lower brightness was pressed",
+        "nl": "Lagere helderheid is ingedrukt"
+      }
+    },
+    {
+      "id": "dim_up",
+      "title": {
+        "en": "Higher brightness was pressed",
+        "nl": "Hogere helderheid is ingedrukt"
+      }
+    },
+    {
+      "id": "dim_down_long_press",
+      "title": {
+        "en": "Lower brightness was long pressed",
+        "nl": "Lagere helderheid is lang ingedrukt"
+      }
+    },
+    {
+      "id": "dim_up_long_press",
+      "title": {
+        "en": "Higher brightness was long pressed",
+        "nl": "Hogere helderheid is lang ingedrukt"
+      }
+    },
+    {
+      "id": "scene_down",
+      "title": {
+        "en": "Left button was pressed",
+        "nl": "Knop links is ingedrukt"
+      }
+    },
+    {
+      "id": "scene_up",
+      "title": {
+        "en": "Right button was pressed",
+        "nl": "Knop rechts is ingedrukt"
+      }
+    },
+    {
+      "id": "scene_down_long_press",
+      "title": {
+        "en": "Left button was long pressed",
+        "nl": "Knop links is lang ingedrukt"
+      }
+    },
+    {
+      "id": "scene_up_long_press",
+      "title": {
+        "en": "Right button was long pressed",
+        "nl": "Knop rechts is lang ingedrukt"
+      }
+    }
+  ]
+}

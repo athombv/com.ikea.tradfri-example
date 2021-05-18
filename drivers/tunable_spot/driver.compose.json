@@ -1,0 +1,53 @@
+{
+  "name": {
+    "en": "Tunable Spot (GU10)",
+    "nl": "Instelbare Witte Spot (GU10)",
+    "de": "Einstellbarer Spot (GU10)"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim",
+    "light_temperature"
+  ],
+  "capabilitiesOptions": {
+    "dim": {
+      "opts": {
+        "duration": true
+      }
+    },
+    "onoff": {
+      "setOnDim": false
+    }
+  },
+  "zigbee": {
+    "manufacturerName": "IKEA of Sweden",
+    "productId": "TRADFRI bulb GU10 WS 400lm",
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          4,
+          6,
+          8,
+          768
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/tunable_spot/assets/learnmode.svg",
+      "instruction": {
+        "en": "Toggle the spot once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on. It will flash to indicate it has been reset.",
+        "nl": "Zet de spot één keer uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de spot aan en uit te zetten. De spot zal knipperen om aan te geven dat hij is gereset.",
+        "de": "Schalte den Spot einmal um, um ihn zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, den Spot durch 6-maliges Umschalten zurückzusetzen; schalte ihn anschließend schnell ein. Er blinkt wenn er zurückgesetzt wurde."
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/tunable_spot/assets/images/large.jpg",
+    "small": "/drivers/tunable_spot/assets/images/small.jpg"
+  },
+  "settings": [
+
+  ]
+}

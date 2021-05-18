@@ -1,0 +1,18 @@
+{
+  "triggers": [
+    {
+      "id": "up",
+      "title": {
+        "en": "Up button was pressed",
+        "nl": "Omhoog knop is ingedrukt"
+      }
+    },
+    {
+      "id": "down",
+      "title": {
+        "en": "Down button was pressed",
+        "nl": "Omlaag knop is ingedrukt"
+      }
+    }
+  ]
+}

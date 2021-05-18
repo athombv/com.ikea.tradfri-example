@@ -1,0 +1,32 @@
+{
+  "triggers": [
+    {
+      "id": "on",
+      "title": {
+        "en": "On button was pressed",
+        "nl": "Aan knop is ingedrukt"
+      }
+    },
+    {
+      "id": "off",
+      "title": {
+        "en": "Off button was pressed",
+        "nl": "Uit knop is ingedrukt"
+      }
+    },
+    {
+      "id": "on_long_press",
+      "title": {
+        "en": "On button was long pressed",
+        "nl": "Aan knop is lang ingedrukt"
+      }
+    },
+    {
+      "id": "off_long_press",
+      "title": {
+        "en": "Off button was long pressed",
+        "nl": "Uit knop is lang ingedrukt"
+      }
+    }
+  ]
+}

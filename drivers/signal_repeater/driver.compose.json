@@ -1,0 +1,33 @@
+{
+  "name": {
+    "en": "Signal Repeater",
+    "nl": "Signaalversterker"
+  },
+  "class": "other",
+  "capabilities": [],
+  "zigbee": {
+    "manufacturerName": "IKEA of Sweden",
+    "productId": [
+      "TRADFRI signal repeater",
+      "TRADFRI Signal Repeater"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/signal_repeater/assets/learnmode.svg",
+      "instruction": {
+        "en": "Press and hold the pair button near the USB port with a small pin until the LED starts blinking.\n\nNote: it can take 15-20 seconds before pairing starts after releasing the button, if the device does not pair within 15-20 seconds please try again.",
+        "nl": "Houd met een klein pinnetje de knop bij de USB poort van de Signaalversterker ingedrukt totdat de LED gaat knipperen.\n\nLet op: het kan 15-20 seconden duren na het loslaten van de knop voor het apparaat wordt gekoppeld, gebeurt dit niet binnen 15-20 seconden probeer het dan nog eens."
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/signal_repeater/assets/images/large.png",
+    "small": "/drivers/signal_repeater/assets/images/small.png"
+  }
+}

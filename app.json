@@ -1,0 +1,1466 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.ikea.tradfri",
+  "name": {
+    "en": "IKEA Trådfri",
+    "de": "IKEA Trådfri"
+  },
+  "description": {
+    "en": "Create the right atmosphere for every mood",
+    "nl": "Creëer de juiste sfeer voor elke stemming"
+  },
+  "category": [
+    "lights"
+  ],
+  "version": "1.8.4",
+  "compatibility": ">=5.0.0",
+  "brandColor": "#0b579e",
+  "sdk": 3,
+  "author": {
+    "name": "Athom B.V.",
+    "email": "info@athom.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Lucas van der Have",
+        "email": "lucasvdhave@gmail.com"
+      }
+    ]
+  },
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Control Outlet",
+        "nl": "Draadloos Stopcontact",
+        "de": "Drahtlose Steckdose"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI control outlet"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/control_outlet/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pair button on top of the Control Outlet with a small pin until the LED starts blinking.\n\nNote: it can take 15-20 seconds before pairing starts after releasing the button, if the device does not pair within 15-20 seconds please try again.",
+            "nl": "Houd met een klein pinnetje de knop boven op het Draadloos Stopcontact ingedrukt totdat de LED gaat knipperen.\n\nLet op: het kan 15-20 seconden duren na het loslaten van de knop voor het apparaat wordt gekoppeld, gebeurt dit niet binnen 15-20 seconden probeer het dan nog eens.",
+            "de": "Drücke und halte die Koppeln-Taste oben auf der drahtlosen Steckdose mit einem kleinen Stift, bis die LED blinkt.\n\nHinweis: es kann 15-20 Sekunden dauern, bevor das Koppeln nach dem Loslassen der Taste beginne; wenn das Gerät innerhalb 15-20 Minuten nicht gekoppelt wird, bitte versuche es erneut."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/control_outlet/assets/images/large.png",
+        "small": "/drivers/control_outlet/assets/images/small.png"
+      },
+      "id": "control_outlet"
+    },
+    {
+      "id": "dim_remote_control",
+      "name": {
+        "en": "Wireless Dimmer",
+        "nl": "Draadloze Dimmer"
+      },
+      "class": "remote",
+      "capabilities": [
+        "alarm_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI on/off switch"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              6,
+              8,
+              4096
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/dim_remote_control/assets/learnmode.svg",
+          "instruction": {
+            "en": "Open up the Wireless Dimmer to access the pair button. Press the pair button 4 times in 5 seconds and wait for the LED to start blinking.",
+            "nl": "Maak de Draadloze Dimmer open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden en wacht tot het lampje gaat knipperen."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/dim_remote_control/assets/images/large.png",
+        "small": "/drivers/dim_remote_control/assets/images/small.png"
+      }
+    },
+    {
+      "name": {
+        "en": "Dimmable Bulb (E27)",
+        "nl": "Dimbare Lamp (E27)",
+        "de": "Dimmbare Birne (E27)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI bulb E27 opal 1000lm",
+          "TRADFRI bulb E27 W opal 1000lm",
+          "TRADFRI bulb E27 WW clear 250lm",
+          "TRADFRI bulb E27 WW 806lm"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/dimmable_bulb/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the bulb once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de lamp één keer uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten zoals de animatie laat zien, laat de lamp vervolgens aan staan. De lamp zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte die Birne einmal um, um sie zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, die Birne durch 6-maliges Umschalten zurückzusetzen; schalte sie anschließend schnell ein. Sie blinkt wenn sie zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/dimmable_bulb/assets/images/large.png",
+        "small": "/drivers/dimmable_bulb/assets/images/small.png"
+      },
+      "settings": [],
+      "id": "dimmable_bulb"
+    },
+    {
+      "name": {
+        "en": "Dimmable Bulb (E14)",
+        "nl": "Dimbare Lamp (E14)",
+        "de": "Dimmbare Birne (E14)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": "TRADFRI bulb E14 W op/ch 400lm",
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/dimmable_bulb_e14/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the bulb once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de lamp één keer uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten zoals de animatie laat zien, laat de lamp vervolgens aan staan. De lamp zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte die Birne einmal um, um sie zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, die Birne durch 6-maliges Umschalten zurückzusetzen; schalte sie anschließend schnell ein. Sie blinkt wenn sie zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/dimmable_bulb_e14/assets/images/large.jpg",
+        "small": "/drivers/dimmable_bulb_e14/assets/images/small.jpg"
+      },
+      "settings": [],
+      "id": "dimmable_bulb_e14"
+    },
+    {
+      "name": {
+        "en": "Dimmable Spot (GU10)",
+        "nl": "Dimbare Spot (GU10)",
+        "de": "Dimmbarer Spot (GU10)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI bulb GU10 W 400lm",
+          "TRADFRI bulb GU10 WW 400lm"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/dimmable_spot/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the spot once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de spot één keer uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de spot aan en uit te zetten. De spot zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte den Spot einmal um, um ihn zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, den Spot durch 6-maliges Umschalten zurückzusetzen; schalte ihn anschließend schnell ein. Er blinkt wenn er zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/dimmable_spot/assets/images/large.jpg",
+        "small": "/drivers/dimmable_spot/assets/images/small.jpg"
+      },
+      "settings": [],
+      "id": "dimmable_spot"
+    },
+    {
+      "name": {
+        "en": "Leptiter Recessed Spotlight",
+        "nl": "Leptiter Inbouwspot",
+        "de": "Leptiter Einbauspot"
+      },
+      "class": "light",
+      "capabilities": [
+        "dim",
+        "onoff",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "images": {
+        "large": "/drivers/dimmable_spot_leptiter/assets/images/large.png",
+        "small": "/drivers/dimmable_spot_leptiter/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "LEPTITER Recessed spot light"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/dimmable_spot_leptiter/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the Leptiter Recessed Spotlight once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the Leptiter Recessed Spotlight by toggling it 6 times, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de Leptiter Inbouwspot één keer uit en weer aan.\n\nWordt de Leptiter Inbouwspot niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten, laat de lamp vervolgens aan staan. De Leptiter Inbouwspot zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte das Leptiter Einbauspot einmal um, um es zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche das Leptiter Einbauspot durch 6-maliges Umschalten zurückzusetzen; schalte es anschließend schnell ein. Es blinkt wenn es zurückgesetzt wurde."
+          }
+        }
+      },
+      "id": "dimmable_spot_leptiter"
+    },
+    {
+      "name": {
+        "en": "Dimmable Transformer",
+        "nl": "Dimbare Transformator",
+        "de": "Dimmbarer Transformator"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI transformer 10W",
+          "TRADFRI transformer 30W",
+          "TRADFRI Driver 10W",
+          "TRADFRI Driver 30W"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/dimmable_transformer/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the transformer once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the transformer by toggling it 6 times, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de transformator één keer uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de transformator aan en uit te zetten. De transformator zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte den Transformator einmal um, um ihn zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche den Transformator durch 6-maliges Umschalten zurückzusetzen; schalte ihn anschließend schnell ein. Er blinkt wenn er zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/dimmable_transformer/assets/images/large.png",
+        "small": "/drivers/dimmable_transformer/assets/images/small.png"
+      },
+      "settings": [],
+      "id": "dimmable_transformer"
+    },
+    {
+      "name": {
+        "en": "Floalt Panel",
+        "nl": "Floalt Paneel",
+        "de": "Floalt-Paneel"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "FLOALT panel WS 30x30",
+          "FLOALT panel WS 30x90",
+          "FLOALT panel WS 90x30",
+          "FLOALT panel WS 60x60"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/floalt_panel/assets/icon.svg",
+          "instruction": {
+            "en": "Toggle the Floalt Panel once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the Floalt Panel by toggling it 6 times, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet het Floalt Paneel één keer uit en weer aan.\n\nWordt het Floalt Paneel niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten, laat de lamp vervolgens aan staan. Het Floalt Paneel zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte das FLOALT-Paneel einmal um, um es zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche das FLOALT-Paneel durch 6-maliges Umschalten zurückzusetzen; schalte es anschließend schnell ein. Es blinkt wenn es zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/floalt_panel/assets/images/large.png",
+        "small": "/drivers/floalt_panel/assets/images/small.png"
+      },
+      "settings": [],
+      "id": "floalt_panel"
+    },
+    {
+      "name": {
+        "en": "Gunnarp Ceiling/Wall Lamp",
+        "nl": "Gunnarp Plafond-/Wandlamp",
+        "de": "Gunnarp Decken-/Wandleuchte"
+      },
+      "class": "light",
+      "capabilities": [
+        "light_temperature",
+        "dim",
+        "onoff"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "images": {
+        "large": "/drivers/gunnarp_round/assets/images/large.png",
+        "small": "/drivers/gunnarp_round/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "GUNNARP panel round"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/gunnarp_round/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the Gunnarp Ceiling/Wall lamp once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the Gunnarp Ceiling/Wall lamp by toggling it 6 times, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de Gunnarp Plafond-/Wandlamp één keer uit en weer aan.\n\nWordt de Gunnarp Plafond-/Wandlamp niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten, laat de lamp vervolgens aan staan. De Gunnarp Plafond-/Wandlamp zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte das Gunnarp Decken-/Wandleuchte einmal um, um es zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche das Gunnarp Decken-/Wandleuchte durch 6-maliges Umschalten zurückzusetzen; schalte es anschließend schnell ein. Es blinkt wenn es zurückgesetzt wurde."
+          }
+        }
+      },
+      "id": "gunnarp_round"
+    },
+    {
+      "name": {
+        "en": "Gunnarp Ceiling/Wall Lamp",
+        "nl": "Gunnarp Plafond-/Wandlamp",
+        "de": "Gunnarp Decken-/Wandleuchte"
+      },
+      "class": "light",
+      "capabilities": [
+        "light_temperature",
+        "dim",
+        "onoff"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "images": {
+        "large": "/drivers/gunnarp_square/assets/images/large.png",
+        "small": "/drivers/gunnarp_square/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "GUNNARP panel 40*40"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/gunnarp_square/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the Gunnarp Ceiling/Wall lamp once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the Gunnarp Ceiling/Wall lamp by toggling it 6 times, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de Gunnarp Plafond-/Wandlamp één keer uit en weer aan.\n\nWordt de Gunnarp Plafond-/Wandlamp niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten, laat de lamp vervolgens aan staan. De Gunnarp Plafond-/Wandlamp zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte das Gunnarp Decken-/Wandleuchte einmal um, um es zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche das Gunnarp Decken-/Wandleuchte durch 6-maliges Umschalten zurückzusetzen; schalte es anschließend schnell ein. Es blinkt wenn es zurückgesetzt wurde."
+          }
+        }
+      },
+      "id": "gunnarp_square"
+    },
+    {
+      "id": "motion_sensor",
+      "name": {
+        "en": "Motion Sensor",
+        "nl": "Bewegingssensor",
+        "de": "Bewegungssensor"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery",
+        "alarm_motion"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032",
+          "CR2032"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI motion sensor"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              3,
+              9,
+              4096
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/motion_sensor/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the pair button on the back of the Motion Sensor 4 times in 5 seconds and wait for the LED to start blinking.",
+            "nl": "Druk 4 keer op de pair knop op de achterkant van de Bewegingssensor binnen 5 seconden en wacht tot het lampje gaat knipperen.",
+            "de": "Drücke die Taste 4 Mal in 5 Sekunden."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/motion_sensor/assets/images/large.png",
+        "small": "/drivers/motion_sensor/assets/images/small.png"
+      }
+    },
+    {
+      "id": "remote_control",
+      "name": {
+        "en": "Remote Control",
+        "nl": "Afstandsbediening",
+        "de": "Fernbedienung"
+      },
+      "class": "remote",
+      "capabilities": [
+        "alarm_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI remote control"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              5,
+              4096
+            ],
+            "bindings": [
+              1,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/remote_control/assets/learnmode.svg",
+          "instruction": {
+            "en": "Open up the Remote Control to access the pair button. Press the pair button 4 times in 5 seconds and wait for the LED to start blinking.",
+            "nl": "Maak de Afstandsbediening open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden en wacht tot het lampje gaat knipperen.",
+            "de": "Öffne den Fernbedienung, um auf die Koppeln-Taste zuzugreifen. Drücke die Taste 4 Mal in 5 Sekunden."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/remote_control/assets/images/large.png",
+        "small": "/drivers/remote_control/assets/images/small.png"
+      }
+    },
+    {
+      "name": {
+        "en": "Rotating Dimmer",
+        "nl": "Draai Dimmer",
+        "de": "Drehdimmer"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI dimmer",
+          "TRADFRI wireless dimmer"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              4096
+            ],
+            "bindings": [
+              1,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/remote_rotating_dimmer/assets/learnmode.svg",
+          "instruction": {
+            "en": "Open up the Rotating Dimmer to access the pair button. Press the pair button 4 times in 5 seconds and wait for the LED to start blinking.",
+            "nl": "Maak de Draai Dimmer open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden en wacht tot het lampje gaat knipperen.",
+            "de": "Öffne den Drehdimmer, um auf die Koppeln-Taste zuzugreifen. Drücke die Taste 4 Mal in 5 Sekunden."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/remote_rotating_dimmer/assets/images/large.png",
+        "small": "/drivers/remote_rotating_dimmer/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "sensitivity",
+          "type": "number",
+          "label": {
+            "nl": "Dimmer gevoeligheid",
+            "en": "Dimmer sensitivity",
+            "de": "Dimmerempfindlichkeit"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0.1,
+            "max": 2,
+            "step": 0.1
+          }
+        }
+      ],
+      "id": "remote_rotating_dimmer"
+    },
+    {
+      "name": {
+        "en": "RGB Bulb (E27)",
+        "nl": "RGB Lamp (E27)",
+        "de": "RGB-Birne (E27)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_hue": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_saturation": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI bulb E27 CWS opal 600lm"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/rgb_bulb/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the bulb once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de lamp één keer uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten zoals de animatie laat zien, laat de lamp vervolgens aan staan. De lamp zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte die Birne einmal um, um sie zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, die Birne durch 6-maliges Umschalten zurückzusetzen; schalte sie anschließend schnell ein. Sie blinkt wenn sie zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/rgb_bulb/assets/images/large.png",
+        "small": "/drivers/rgb_bulb/assets/images/small.png"
+      },
+      "settings": [],
+      "id": "rgb_bulb"
+    },
+    {
+      "name": {
+        "en": "RGB Bulb (E14)",
+        "nl": "RGB Lamp (E14)",
+        "de": "RGB-Birne (E14)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_hue": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_saturation": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI bulb E14 CWS opal 600lm"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/rgb_bulb_e14/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the bulb once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de lamp één keer uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten zoals de animatie laat zien, laat de lamp vervolgens aan staan. De lamp zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte die Birne einmal um, um sie zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, die Birne durch 6-maliges Umschalten zurückzusetzen; schalte sie anschließend schnell ein. Sie blinkt wenn sie zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/rgb_bulb_e14/assets/images/large.jpg",
+        "small": "/drivers/rgb_bulb_e14/assets/images/small.jpg"
+      },
+      "settings": [],
+      "id": "rgb_bulb_e14"
+    },
+    {
+      "name": {
+        "en": "Fyrtur Roller Blind",
+        "nl": "Fyrtur Rolgordijn",
+        "de": "Fyrtur Rollo"
+      },
+      "class": "blinds",
+      "capabilities": [
+        "alarm_battery",
+        "windowcoverings_set"
+      ],
+      "energy": {
+        "batteries": [
+          "OTHER"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "FYRTUR block-out roller blind"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              4,
+              258
+            ],
+            "bindings": [
+              258
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/rollerblind_fyrtur/assets/learnmode.svg",
+          "instruction": {
+            "en": "Simultaneously press the up and down buttons on the rollerblind until the LED starts blinking.\n\nNote: it can take 15-20 seconds before pairing starts, if the device does not pair within 15-20 seconds please try again.",
+            "nl": "Druk tegelijk de twee omhoog en omlaag knoppen op het rolgordijn in totdat de LED begint te knipperen.\n\nLet op: het kan 15-20 seconden duren voor het apparaat wordt gekoppeld, gebeurt dit niet binnen 15-20 seconden probeer het dan nog eens.",
+            "de": "Drücke gleichzeitig die Auf- und Ab-Tasten am Rollo, bis die LED zu blinken beginnt.\n\nHinweis: Es kann 15-20 Sekunden dauern, bis die Kopplung beginnt. Wenn das Gerät nicht innerhalb von 15-20 Sekunden koppelt, versuche es bitte erneut."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/rollerblind_fyrtur/assets/images/large.jpg",
+        "small": "/drivers/rollerblind_fyrtur/assets/images/small.jpg"
+      },
+      "id": "rollerblind_fyrtur"
+    },
+    {
+      "name": {
+        "en": "Kadrilj Roller Blind",
+        "nl": "Kadrilj Rolgordijn",
+        "de": "Kadrilj Rollo"
+      },
+      "class": "blinds",
+      "capabilities": [
+        "alarm_battery",
+        "windowcoverings_set"
+      ],
+      "energy": {
+        "batteries": [
+          "OTHER"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "KADRILJ roller blind"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              4,
+              258
+            ],
+            "bindings": [
+              258
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/rollerblind_kadrilj/assets/learnmode.svg",
+          "instruction": {
+            "en": "Simultaneously press the up and down buttons on the roller blind until the LED starts blinking.\n\nNote: it can take 15-20 seconds before pairing starts, if the device does not pair within 15-20 seconds please try again.",
+            "nl": "Druk tegelijk de twee omhoog en omlaag knoppen op het rolgordijn in totdat de LED begint te knipperen.\n\nLet op: het kan 15-20 seconden duren voor het apparaat wordt gekoppeld, gebeurt dit niet binnen 15-20 seconden probeer het dan nog eens.",
+            "de": "Drücke gleichzeitig die Auf- und Ab-Tasten am Rollo, bis die LED zu blinken beginnt.\n\nHinweis: Es kann 15-20 Sekunden dauern, bis die Kopplung beginnt. Wenn das Gerät nicht innerhalb von 15-20 Sekunden koppelt, versuche es bitte erneut."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/rollerblind_kadrilj/assets/images/large.jpg",
+        "small": "/drivers/rollerblind_kadrilj/assets/images/small.jpg"
+      },
+      "id": "rollerblind_kadrilj"
+    },
+    {
+      "name": {
+        "en": "Signal Repeater",
+        "nl": "Signaalversterker"
+      },
+      "class": "other",
+      "capabilities": [],
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI signal repeater",
+          "TRADFRI Signal Repeater"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/signal_repeater/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the pair button near the USB port with a small pin until the LED starts blinking.\n\nNote: it can take 15-20 seconds before pairing starts after releasing the button, if the device does not pair within 15-20 seconds please try again.",
+            "nl": "Houd met een klein pinnetje de knop bij de USB poort van de Signaalversterker ingedrukt totdat de LED gaat knipperen.\n\nLet op: het kan 15-20 seconden duren na het loslaten van de knop voor het apparaat wordt gekoppeld, gebeurt dit niet binnen 15-20 seconden probeer het dan nog eens."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/signal_repeater/assets/images/large.png",
+        "small": "/drivers/signal_repeater/assets/images/small.png"
+      },
+      "id": "signal_repeater"
+    },
+    {
+      "name": {
+        "en": "Tunable Spot (GU10)",
+        "nl": "Instelbare Witte Spot (GU10)",
+        "de": "Einstellbarer Spot (GU10)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": "TRADFRI bulb GU10 WS 400lm",
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/tunable_spot/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the spot once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the spot by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de spot één keer uit en weer aan.\n\nWordt de spot niet automatisch toegevoegd binnen 20 seconden, probeer het dan te resetten door snel 6 keer de spot aan en uit te zetten. De spot zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte den Spot einmal um, um ihn zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, den Spot durch 6-maliges Umschalten zurückzusetzen; schalte ihn anschließend schnell ein. Er blinkt wenn er zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/tunable_spot/assets/images/large.jpg",
+        "small": "/drivers/tunable_spot/assets/images/small.jpg"
+      },
+      "settings": [],
+      "id": "tunable_spot"
+    },
+    {
+      "name": {
+        "en": "Tunable White Bulb (E27)",
+        "nl": "Instelbare Witte Lamp (E27)",
+        "de": "Einstellbare weisse Birne (E27)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI bulb E27 WS�opal 980lm",
+          "TRADFRI bulb E27 WS�opal 980lm",
+          "TRADFRI bulb E27 WS opal 980lm",
+          "TRADFRI bulb E27 WS opal 1000lm",
+          "TRADFRI bulb E12 WS opal 400lm",
+          "TRADFRI bulb E26 WS clear 950lm",
+          "TRADFRI bulb E26 WS opal 980lm",
+          "TRADFRI bulb E26 WS�opal 980lm",
+          "TRADFRI bulb E26 WS�opal 980lm",
+          "TRADFRI bulb E27 WS clear 950lm",
+          "TRADFRI bulb E27 WS clear 806lm"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/tunable_white_bulb/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the bulb once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on very quickly. It will flash to indicate it has been reset.",
+            "nl": "Zet de lamp één keer uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten zoals de animatie laat zien, laat de lamp vervolgens aan staan. De lamp zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte die Birne einmal um, um sie zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, die Birne durch 6-maliges Umschalten zurückzusetzen; schalte sie anschließend schnell ein. Sie blinkt wenn sie zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/tunable_white_bulb/assets/images/large.png",
+        "small": "/drivers/tunable_white_bulb/assets/images/small.png"
+      },
+      "settings": [],
+      "id": "tunable_white_bulb"
+    },
+    {
+      "name": {
+        "en": "Tunable White Bulb (E14)",
+        "nl": "Instelbare Witte Lamp (E14)",
+        "de": "Einstellbare weisse Birne (E14)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "zigbee": {
+        "manufacturerName": "IKEA of Sweden",
+        "productId": [
+          "TRADFRI bulb E14 WS opal 400lm",
+          "TRADFRI bulb E14 WS opal 600lm",
+          "TRADFRI bulb E14 WS 470lm"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/tunable_white_bulb_e14/assets/learnmode.svg",
+          "instruction": {
+            "en": "Toggle the bulb once to start pairing.\n\nIf pairing does not automatically start within 20 seconds, try resetting the bulb by toggling it 6 times as demonstrated by the animation, afterwards leave it turned on. It will flash to indicate it has been reset.",
+            "nl": "Zet de lamp één keer uit en weer aan.\n\nWordt de lamp niet automatisch toegevoegd binnen 20 seconden, probeer dan een reset uit te voeren door de lamp 6 keer uit en aan te zetten zoals de animatie laat zien, laat de lamp vervolgens aan staan. De lamp zal knipperen om aan te geven dat hij is gereset.",
+            "de": "Schalte die Birne einmal um, um sie zu koppeln.\n\nWenn das Koppeln innerhalb 20 Sekunden nicht automatisch startet, versuche, wie in der Animation demonstriert, die Birne durch 6-maliges Umschalten zurückzusetzen; schalte sie anschließend schnell ein. Sie blinkt wenn sie zurückgesetzt wurde."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/tunable_white_bulb_e14/assets/images/large.jpg",
+        "small": "/drivers/tunable_white_bulb_e14/assets/images/small.jpg"
+      },
+      "settings": [],
+      "id": "tunable_white_bulb_e14"
+    },
+    {
+      "id": "updown_remote_control",
+      "name": {
+        "en": "Up/Down Remote Control",
+        "nl": "Omhoog/Omlaag Afstandsbediening"
+      },
+      "class": "remote",
+      "capabilities": [
+        "alarm_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "KE",
+        "productId": [
+          "TRADFRI open/close remote"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              4096
+            ],
+            "bindings": [
+              6,
+              8,
+              258
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/updown_remote_control/assets/learnmode.svg",
+          "instruction": {
+            "en": "Open up the Up/Down Remote Control to access the pair button. Press the pair button 4 times in 5 seconds and wait for the LED to start blinking.",
+            "nl": "Maak de Omhoog/Omlaag Afstandsbediening open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden en wacht tot het lampje gaat knipperen."
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/updown_remote_control/assets/images/large.png",
+        "small": "/drivers/updown_remote_control/assets/images/small.png"
+      }
+    }
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "id": "on",
+        "title": {
+          "en": "On button was pressed",
+          "nl": "Aan knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dim_remote_control"
+          }
+        ]
+      },
+      {
+        "id": "off",
+        "title": {
+          "en": "Off button was pressed",
+          "nl": "Uit knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dim_remote_control"
+          }
+        ]
+      },
+      {
+        "id": "on_long_press",
+        "title": {
+          "en": "On button was long pressed",
+          "nl": "Aan knop is lang ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dim_remote_control"
+          }
+        ]
+      },
+      {
+        "id": "off_long_press",
+        "title": {
+          "en": "Off button was long pressed",
+          "nl": "Uit knop is lang ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dim_remote_control"
+          }
+        ]
+      },
+      {
+        "id": "toggled",
+        "title": {
+          "en": "On/off button was pressed",
+          "nl": "Aan/uit knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_control"
+          }
+        ]
+      },
+      {
+        "id": "dim_down",
+        "title": {
+          "en": "Lower brightness was pressed",
+          "nl": "Lagere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_control"
+          }
+        ]
+      },
+      {
+        "id": "dim_up",
+        "title": {
+          "en": "Higher brightness was pressed",
+          "nl": "Hogere helderheid is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_control"
+          }
+        ]
+      },
+      {
+        "id": "dim_down_long_press",
+        "title": {
+          "en": "Lower brightness was long pressed",
+          "nl": "Lagere helderheid is lang ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_control"
+          }
+        ]
+      },
+      {
+        "id": "dim_up_long_press",
+        "title": {
+          "en": "Higher brightness was long pressed",
+          "nl": "Hogere helderheid is lang ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_control"
+          }
+        ]
+      },
+      {
+        "id": "scene_down",
+        "title": {
+          "en": "Left button was pressed",
+          "nl": "Knop links is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_control"
+          }
+        ]
+      },
+      {
+        "id": "scene_up",
+        "title": {
+          "en": "Right button was pressed",
+          "nl": "Knop rechts is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_control"
+          }
+        ]
+      },
+      {
+        "id": "scene_down_long_press",
+        "title": {
+          "en": "Left button was long pressed",
+          "nl": "Knop links is lang ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_control"
+          }
+        ]
+      },
+      {
+        "id": "scene_up_long_press",
+        "title": {
+          "en": "Right button was long pressed",
+          "nl": "Knop rechts is lang ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_control"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_rotated",
+        "deprecated": true,
+        "title": {
+          "en": "Dimmer was rotated",
+          "nl": "Dimmer is gedraaid",
+          "de": "Dimmer wurde gedreht"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert"
+            },
+            "example": 1
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_rotating_dimmer"
+          }
+        ]
+      },
+      {
+        "id": "dimmer_rotate_stopped",
+        "title": {
+          "en": "Dimmer is rotated",
+          "nl": "Dimmer is gedraaid",
+          "de": "Dimmer wurde gedreht"
+        },
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert"
+            },
+            "example": 1
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=remote_rotating_dimmer"
+          }
+        ]
+      },
+      {
+        "id": "up",
+        "title": {
+          "en": "Up button was pressed",
+          "nl": "Omhoog knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=updown_remote_control"
+          }
+        ]
+      },
+      {
+        "id": "down",
+        "title": {
+          "en": "Down button was pressed",
+          "nl": "Omlaag knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=updown_remote_control"
+          }
+        ]
+      }
+    ]
+  }
+}

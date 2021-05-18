@@ -1,0 +1,33 @@
+{
+  "name": "com.ikea.tradfri",
+  "version": "1.0.9",
+  "description": "This app allows you to connect your IKEA Trådfri Devices to Homey",
+  "main": "app.js",
+  "dependencies": {
+    "homey-log": "^2.0.1",
+    "homey-zigbeedriver": "^1.6.1",
+    "zigbee-clusters": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-athom": "^2.0.8",
+    "homey": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athombv/com.ikea.tradfri.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/athombv/com.ikea.tradfri/issues"
+  },
+  "homepage": "https://github.com/athombv/com.ikea.tradfri#readme"
+}

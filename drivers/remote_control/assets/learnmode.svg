@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>remote_control/pair</title>
+    <desc>Created with Sketch.</desc>
+            <style type="text/css">
+    #pair {
+    	animation: fillpulse 4s infinite;
+    }
+    
+    @keyframes fillpulse {
+    	0%, 15%, 35%, 55%, 75%, 100% {
+    		fill: rgba(255,255,255,0);
+    	}
+    	25%, 45%, 65%, 85% {
+    		fill: #0078CC;
+    	}
+    }
+    </style>
+    <g id="remote_control/pair" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#000000" stroke-width="20" stroke-linejoin="round" cx="480" cy="480" r="459"></circle>
+        <circle id="Oval" stroke="#000000" stroke-width="10" stroke-linejoin="round" cx="480" cy="480" r="311"></circle>
+        <circle id="Oval" stroke="#000000" stroke-width="10" stroke-linejoin="round" cx="480" cy="480" r="287"></circle>
+        <path d="M353.613195,656.679788 C328.795299,641.748113 307.101118,655.947559 289.026706,633.487548 C255.22815,591.488064 235,538.106301 235,480 C235,345.519867 343.349263,236.34606 477.514018,235.00754 C478.341703,235.00754 480.1328,235.00754 481.008262,235.013821 C615.106682,236.424015 723.378596,345.567877 723.378596,480 C723.378596,538.106301 703.150447,591.488064 669.35189,633.487548 C651.277478,655.947559 629.583297,641.748113 604.765401,656.679788 C572.44375,676.126095 546.843429,723.28792 479.189298,723.28792 C411.535167,723.28792 386.194397,676.282253 353.613195,656.679788 Z" id="Path" stroke="#000000" stroke-width="20" stroke-linejoin="round"></path>
+        <path d="M573,629 C612.320978,629 648.108203,613.870201 674.857655,589.114622 C704.464816,561.714344 723,522.521734 723,479 C723,396.157288 655.842712,329 573,329 C490.157288,329 423,396.157288 423,479 C423,561.842712 490.157288,629 573,629 Z" id="Oval" stroke="#000000" stroke-width="10" stroke-linejoin="round"></path>
+        <circle id="pair" fill="#CC42FF" cx="338" cy="479" r="24"></circle>
+        <circle id="Oval" stroke="#000000" stroke-width="10" cx="338" cy="479" r="19"></circle>
+        <circle id="Oval" stroke="#000000" stroke-width="10" cx="338" cy="479" r="19"></circle>
+        <path d="M362,356 L362.000909,454.917716 C368.177625,461.07369 372,469.590463 372,479 C372,497.777681 356.777681,513 338,513 C319.222319,513 304,497.777681 304,479 C304,469.589959 307.822786,461.072777 314.000086,454.916725 L314,356" id="Path" stroke="#000000" stroke-width="10" stroke-linecap="round"></path>
+    </g>
+</svg>

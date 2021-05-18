@@ -1,0 +1,44 @@
+{
+  "id": "dim_remote_control",
+  "name": {
+    "en": "Wireless Dimmer",
+    "nl": "Draadloze Dimmer"
+  },
+  "class": "remote",
+  "capabilities": [
+    "alarm_battery"
+  ],
+  "energy": {
+    "batteries": [
+      "CR2032"
+    ]
+  },
+  "zigbee": {
+    "manufacturerName": "IKEA of Sweden",
+    "productId": [
+      "TRADFRI on/off switch"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          1,
+          6,
+          8,
+          4096
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/dim_remote_control/assets/learnmode.svg",
+      "instruction": {
+        "en": "Open up the Wireless Dimmer to access the pair button. Press the pair button 4 times in 5 seconds and wait for the LED to start blinking.",
+        "nl": "Maak de Draadloze Dimmer open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden en wacht tot het lampje gaat knipperen."
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/dim_remote_control/assets/images/large.png",
+    "small": "/drivers/dim_remote_control/assets/images/small.png"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "triggers": [
+    {
+      "id": "dimmer_rotated",
+      "deprecated": true,
+      "title": {
+        "en": "Dimmer was rotated",
+        "nl": "Dimmer is gedraaid",
+        "de": "Dimmer wurde gedreht"
+      },
+      "tokens": [
+        {
+          "name": "value",
+          "type": "number",
+          "title": {
+            "en": "Value",
+            "nl": "Waarde",
+            "de": "Wert"
+          },
+          "example": 1
+        }
+      ]
+    },
+    {
+      "id": "dimmer_rotate_stopped",
+      "title": {
+        "en": "Dimmer is rotated",
+        "nl": "Dimmer is gedraaid",
+        "de": "Dimmer wurde gedreht"
+      },
+      "tokens": [
+        {
+          "name": "value",
+          "type": "number",
+          "title": {
+            "en": "Value",
+            "nl": "Waarde",
+            "de": "Wert"
+          },
+          "example": 1
+        }
+      ]
+    }
+  ]
+}

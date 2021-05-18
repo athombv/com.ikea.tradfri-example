@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="960px" viewBox="0 0 960 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>remote_rotating_dimmer/icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="remote_rotating_dimmer/icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ellipse id="Oval" stroke="#000000" stroke-width="20" cx="480" cy="336.5" rx="444" ry="247.5"></ellipse>
+        <path d="M26,351.637795 L26.8466941,351.639664 C26.2849572,346.408778 26,341.135615 26,335.824803 C26,193.984381 229.262724,79 480,79 C730.737276,79 934,193.984381 934,335.824803 C934,341.135615 933.715043,346.408778 933.153306,351.639664 L934,351.637795 L934,647.177165 C934,792.330209 730.737276,910 480,910 C231.770096,910 30.0700019,794.671838 26.060823,651.523421 L26,647.177165 L26,351.637795 Z" id="Path" stroke="#000000" stroke-width="40"></path>
+        <path d="M26,490 C26,633.04175 229.262724,749 480,749 C730.737276,749 934,633.04175 934,490" id="Path" stroke="#000000" stroke-width="20"></path>
+    </g>
+</svg>
