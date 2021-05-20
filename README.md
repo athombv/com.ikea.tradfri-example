@@ -6,4 +6,5 @@ Read the [Homey Apps SDK Documentation](https://apps.developer.homey.app) for mo
 > Because this repository is a clone of the live code, pull requests will be ignored.
 
 ## What does this app do?
-This app uses The Homey Zigbee plugin to control Ikea Tradfri devices. Read more about Developing a Zigbee app at https://apps.developer.homey.app/wireless/zigbee
+
+This app controls Ikea Trådfri devices using the Zigbee protocol. It uses the [`homey-zigbeedriver`](https://athombv.github.io/node-homey-zigbeedriver/) and [`zigbee-clusters`](https://athombv.github.io/node-zigbee-clusters/) libraries to implement the Zigbee drivers. Read more about Developing a Zigbee app at https://apps.developer.homey.app/wireless/zigbee.
