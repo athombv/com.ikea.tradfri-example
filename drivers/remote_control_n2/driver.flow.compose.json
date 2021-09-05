@@ -4,7 +4,7 @@
       "id": "n2_on",
       "title": {
         "en": "On button was pressed",
-        "nl": "Lagere helderheid is ingedrukt",
+        "nl": "Aan knop was ingedrukt",
         "de": "An-Button wurde gedrückt"
       }
     },
@@ -12,7 +12,7 @@
       "id": "n2_off",
       "title": {
         "en": "Off button was pressed",
-        "nl": "Hogere helderheid is ingedrukt",
+        "nl": "Uit knop was ingedrukt",
         "de": "Aus-Button wurde gedrückt"
       }
     },
@@ -20,7 +20,7 @@
       "id": "n2_dim_up",
       "title": {
         "en": "On button is long pressed",
-        "nl": "Hogere helderheid is lang ingedrukt",
+        "nl": "Aan knop wordt lang ingedrukt",
         "de": "An-Button wird lange gedrückt"
       }
     },
@@ -28,7 +28,7 @@
       "id": "n2_dim_down",
       "title": {
         "en": "Off button is long pressed",
-        "nl": "Lagere helderheid is lang ingedrukt",
+        "nl": "Uit knop wordt lang ingedrukt",
         "de": "Aus-Button wird lange gedrückt"
       }
     },
@@ -36,7 +36,7 @@
       "id": "n2_dimed_up",
       "title": {
         "en": "On button was long pressed",
-        "nl": "Hogere helderheid is lang ingedrukt",
+        "nl": "Aan knop was lang ingedrukt",
         "de": "An-Button wird lange gedrückt"
       }
     },
@@ -44,7 +44,7 @@
       "id": "n2_dimed_down",
       "title": {
         "en": "Off button was long pressed",
-        "nl": "Lagere helderheid is lang ingedrukt",
+        "nl": "Uit knop was lang ingedrukt",
         "de": "Aus-Button wurde lange gedrückt"
       }
     },
@@ -52,7 +52,7 @@
       "id": "n2_scene_down",
       "title": {
         "en": "Left button was pressed",
-        "nl": "Knop links is ingedrukt",
+        "nl": "Knop links was ingedrukt",
         "de": "Linker-Button wurde gedrückt"
       }
     },
@@ -60,7 +60,7 @@
       "id": "n2_scene_up",
       "title": {
         "en": "Right button was pressed",
-        "nl": "Knop rechts is ingedrukt",
+        "nl": "Knop rechts was ingedrukt",
         "de": "Rechter-Button wurde gedrückt"
       }
     },
@@ -68,7 +68,7 @@
       "id": "n2_scene_down_long_press",
       "title": {
         "en": "Left button is long pressed",
-        "nl": "Knop links is lang ingedrukt",
+        "nl": "Knop links wordt lang ingedrukt",
         "de": "Linker-Button wird lange gedrückt"
       }
     },
@@ -76,7 +76,7 @@
       "id": "n2_scene_up_long_press",
       "title": {
         "en": "Right button is long pressed",
-        "nl": "Knop rechts is lang ingedrukt",
+        "nl": "Knop rechts wordt lang ingedrukt",
         "de": "Rechter-Button wird lange gedrückt"
       }
     },
@@ -84,7 +84,7 @@
       "id": "n2_scened_down_long_press",
       "title": {
         "en": "Left button was long pressed",
-        "nl": "Knop links is lang ingedrukt",
+        "nl": "Knop links was lang ingedrukt",
         "de": "Linker-Button wurde lange gedrückt"
       }
     },
@@ -92,7 +92,7 @@
       "id": "n2_scened_up_long_press",
       "title": {
         "en": "Right button was long pressed",
-        "nl": "Knop rechts is lang ingedrukt",
+        "nl": "Knop rechts was lang ingedrukt",
         "de": "Rechter-Button wurde lange gedrückt"
       }
     }
