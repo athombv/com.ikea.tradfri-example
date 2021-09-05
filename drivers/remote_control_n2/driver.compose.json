@@ -1,0 +1,50 @@
+{
+  "id": "remote_control_n2",
+  "name": {
+    "en": "Remote Control STYRBAR",
+    "nl": "Afstandsbediening STYRBAR",
+    "de": "Fernbedienung STYRBAR"
+  },
+  "class": "remote",
+  "capabilities": [
+    "alarm_battery"
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "zigbee": {
+    "manufacturerName": "IKEA of Sweden",
+    "productId": [
+      "Remote Control N2"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          1,
+          5,
+          4096
+        ],
+        "bindings": [
+          1,
+          8
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "/drivers/remote_control_n2/assets/learnmode.svg",
+      "instruction": {
+        "en": "Open up the Remote Control to access the pair button. Press the pair button 4 times in 5 seconds and wait for the LED to start blinking.",
+        "nl": "Maak de Afstandsbediening open om bij de pair knop te komen. Druk 4 keer op de pair knop binnen 5 seconden en wacht tot het lampje gaat knipperen.",
+        "de": "Öffne den Fernbedienung, um auf die Koppeln-Taste zuzugreifen. Drücke die Taste 4 Mal in 5 Sekunden."
+      }
+    }
+  },
+  "images": {
+    "large": "/drivers/remote_control_n2/assets/images/large.png",
+    "small": "/drivers/remote_control_n2/assets/images/small.png"
+  }
+}
