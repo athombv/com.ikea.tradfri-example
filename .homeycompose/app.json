@@ -6,7 +6,8 @@
   },
   "description": {
     "en": "Create the right atmosphere for every mood",
-    "nl": "Creëer de juiste sfeer voor elke stemming"
+    "nl": "Creëer de juiste sfeer voor elke stemming",
+    "de": "Schaffen Sie die richtige Atmosphäre für jede Stimmung"
   },
   "category": [
     "lights"
@@ -24,6 +25,10 @@
       {
         "name": "Lucas van der Have",
         "email": "lucasvdhave@gmail.com"
+      },
+      {
+        "name": "Morris Haid",
+        "email": "mhaid2016@outlook.com"
       }
     ]
   },
