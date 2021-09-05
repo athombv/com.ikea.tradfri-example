@@ -100,31 +100,14 @@ class RemoteControlN2 extends ZigBeeDevice {
     this._currentSceneLongPress = mode;
 
     if (this._currentSceneLongPress) {
-      const flowId = `n2_scene_${this._currentSceneLongPress}`;
+      const flowId = `n2_scene_${this._currentSceneLongPress}_long_press`;
       this.triggerFlow({ id: flowId })
         .then(() => this.log('flow was triggered', flowId))
         .catch(err => this.error('Error: triggering flow', flowId, err));
       this._currentSceneLongPress = null;
     }
   }
-
-  /**
-   * Handles `onStep` and `onStepWithOnOff` commands and triggers a Flow based on the `mode`
-   * parameter.
-   * @param {'up'|'down'} mode
-   * @param {number} stepSize - A change of `currentLevel` in step size units.
-   * @param {number} transitionTime - Time in 1/10th seconds specified performing the step
-   * should take.
-   * @private
-   */
-  /*_stepCommandHandler({ mode, stepSize, transitionTime }) {
-    if (typeof mode === 'string') {
-      this.triggerFlow({ id: `n2_dim_${mode}` })
-        .then(() => this.log('flow was triggered', `dim_${mode}`))
-        .catch(err => this.error('Error: triggering flow', `dim_${mode}`, err));
-    }
-  }*/
-
+  
   /**
    * Handles Ikea specific scene step command `onIkeaSceneStep` and triggers a Flow based on the
    * `mode` parameter.
@@ -136,7 +119,7 @@ class RemoteControlN2 extends ZigBeeDevice {
    */
   _ikeaStepCommandHandler({ mode, stepSize, transitionTime }) {
     if (typeof mode === 'string') {
-      this.triggerFlow({ id: `n2_scened_${mode}` })
+      this.triggerFlow({ id: `n2_scene_${mode}` })
         .then(() => this.log('flow was triggered', `scened_${mode}`))
         .catch(err => this.error('Error: triggering flow', `scened_${mode}`, err));
     }
@@ -164,7 +147,7 @@ class RemoteControlN2 extends ZigBeeDevice {
    */
   _ikeaStopCommandHandler() {
     if (this._currentSceneLongPress) {
-      const flowId = `n2_scene_${this._currentSceneLongPress}_long_press`;
+      const flowId = `n2_scened_${this._currentSceneLongPress}_long_press`;
       this.triggerFlow({ id: flowId })
         .then(() => this.log('flow was triggered', flowId))
         .catch(err => this.error('Error: triggering flow', flowId, err));
